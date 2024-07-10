@@ -39,96 +39,6 @@
         <extension module="org.wildfly.extension.security.manager"/>
         <extension module="org.wildfly.extension.undertow"/>
     </extensions>
-	    <system-properties>
-        <property name="aws.accessKeyId" value="AKIA2ZGKPEXZ5EUR2EKM"/>
-        <property name="aws.secretKey" value="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"/>
-        <property name="spring.datasource.url" value="jdbc:oracle:thin:@macfindev.cosya3a5yfae.us-east-1.rds.amazonaws.com:1521:macfind"/>
-        <property name="spring.datasource.driver-class-name" value="oracle.jdbc.driver.OracleDriver"/>
-        <property name="spring.jpa.database-platform" value="org.hibernate.dialect.Oracle12cDialect"/>
-        <property name="spring.datasource.hikari.maximum-pool-size" value="1"/>
-        <property name="admin.datasource.url" value="jdbc:postgresql://dev-admin-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/admin?ssl=true&amp;sslmode=require"/>
-        <property name="admin.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="admin.datasource.username" value="svc_admin_user_dev"/>
-        <property name="admin.datasource.password" value="admin"/>
-        <property name="filsrvc.datasource.url" value="jdbc:postgresql://dev-filsrvc-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/filsrvc?ssl=true&amp;sslmode=require"/>
-        <property name="filsrvc.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="filsrvc.datasource.username" value="svc_filsrvc_user_dev"/>
-        <property name="filsrvc.datasource.password" value="filsrvc"/>
-        <property name="expndtr.datasource.url" value="jdbc:postgresql://dev-expndtr-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/expndtr?ssl=true&amp;sslmode=require"/>
-        <property name="expndtr.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="expndtr.datasource.username" value="svc_expndtr_user_dev"/>
-        <property name="expndtr.datasource.password" value="expndtr"/>
-        <property name="cmmts.datasource.url" value="jdbc:postgresql://dev-cmmts-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/cmmts?ssl=true&amp;sslmode=require"/>
-        <property name="cmmts.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="cmmts.datasource.username" value="svc_cmmts_user_dev"/>
-        <property name="cmmts.datasource.password" value="cmmts"/>
-        <property name="alotmt.datasource.url" value="jdbc:postgresql://dev-alotmt-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/alotmt?ssl=true&amp;sslmode=require"/>
-        <property name="alotmt.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="alotmt.datasource.username" value="svc_alotmt_user_dev"/>
-        <property name="alotmt.datasource.password" value="alotmt"/>
-        <property name="bdgt.datasource.url" value="jdbc:postgresql://dev-bdgt-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/bdgt?ssl=true&amp;sslmode=require"/>
-        <property name="bdgt.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="bdgt.datasource.username" value="svc_bdgt_user_dev"/>
-        <property name="bdgt.datasource.password" value="bdgt"/>
-        <property name="chipbdgt.datasource.url" value="jdbc:postgresql://dev-chipbdgt-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/chipbdgt?ssl=true&amp;sslmode=require"/>
-        <property name="chipbdgt.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="chipbdgt.datasource.username" value="svc_chipbdgt_user_dev"/>
-        <property name="chipbdgt.datasource.password" value="chipbdgt"/>
-        <property name="bdgtrvw.datasource.url" value="jdbc:postgresql://dev-bdgtrvw-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/bdgtrvw?ssl=true&amp;sslmode=require"/>
-        <property name="bdgtrvw.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="bdgtrvw.datasource.username" value="svc_bdgtrvw_user_dev"/>
-        <property name="bdgtrvw.datasource.password" value="bdgtrvw"/>
-        <property name="expndtrrvw.datasource.url" value="jdbc:postgresql://dev-expndtrrvw-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/expndtrrvw?ssl=true&amp;sslmode=require"/>
-        <property name="expndtrrvw.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="expndtrrvw.datasource.username" value="svc_expndtrrvw_user_dev"/>
-        <property name="expndtrrvw.datasource.password" value="expndtrrvw"/>
-        <property name="sbmsnsprt.datasource.url" value="jdbc:postgresql://dev-sbmsnsprt-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/sbmsnsprt?ssl=true&amp;sslmode=require"/>
-        <property name="sbmsnsprt.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="sbmsnsprt.datasource.username" value="svc_sbmsnsprt_user_dev"/>
-        <property name="sbmsnsprt.datasource.password" value="sbmsnsprt"/>
-        <property name="dferl.datasource.url" value="jdbc:postgresql://dev-dferl-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/dferl?ssl=true&amp;sslmode=require"/>
-        <property name="dferl.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="dferl.datasource.username" value="svc_dferl_user_dev"/>
-        <property name="dferl.datasource.password" value="dferl"/>
-        <property name="mbes.datasource.url" value="jdbc:postgresql://dev-mbes-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/mbes?ssl=true&amp;sslmode=require"/>
-        <property name="mbes.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="mbes.datasource.username" value="svc_mbes_user_dev"/>
-        <property name="mbes.datasource.password" value="mbes"/>
-        <property name="grnt.datasource.url" value="jdbc:postgresql://dev-grnt-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/grnt?ssl=true&amp;sslmode=require"/>
-        <property name="grnt.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="grnt.datasource.username" value="svc_grnt_user_dev"/>
-        <property name="grnt.datasource.password" value="grnt"/>
-        <property name="reports.datasource.url" value="jdbc:postgresql://dev-reports-db-cluster-one.cosya3a5yfae.us-east-1.rds.amazonaws.com:5432/reports?ssl=true&amp;sslmode=require"/>
-        <property name="reports.datasource.driver-class-name" value="org.postgresql.Driver"/>
-        <property name="reports.datasource.username" value="svc_reports_user_dev"/>
-        <property name="reports.datasource.password" value="reports"/>
-        <property name="calculation-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="ibnrs-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="audit-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="record-lock-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="upper-payment-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="grant-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="workflow-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="comment-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="chip-budget-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="deferral-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="budget-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="submission-support-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="legacy-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="allotment-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="roreview-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="reporting-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="administrative-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="expenditure-64-submission-service" value="http://eks-dev-app.macfin-dev.cmcs.cmscloud.local:8080/"/>
-        <property name="ld.clientId" value="6234cf84e3a8f222c3d85dbd"/>
-        <property name="ld.clientBaseUrl" value="https://clientsdk.launchdarkly.us"/>
-        <property name="ld.clientStreamUrl" value="https://clientstream.launchdarkly.us"/>
-        <property name="ld.clientEventsUrl" value="https://events.launchdarkly.us"/>
-        <property name="ld.serverSdkKey" value="sdk-3a89b7ef-d5f5-4864-a4d6-1f5514603306"/>
-        <property name="ld.serverBaseUrl" value="https://sdk.launchdarkly.us"/>
-        <property name="ld.serverStreamUrl" value="https://stream.launchdarkly.us"/>
-        <property name="ld.serverEventsUrl" value="https://events.launchdarkly.us"/>
-    </system-properties>
     <management>
         <audit-log>
             <formatters>
@@ -203,7 +113,7 @@
             <formatter name="COLOR-PATTERN">
                 <pattern-formatter pattern="%K{level}%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%e%n"/>
             </formatter>
-			  <logging-profiles>
+            <logging-profiles>
                 <logging-profile name="macfinLoggingProfile">
                     <console-handler name="CONSOLE">
                         <formatter>
@@ -241,7 +151,7 @@
                         </handlers>
                     </root-logger>
                 </logging-profile>
-				  </logging-profiles>
+            </logging-profiles>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:batch-jberet:3.0">
             <default-job-repository name="in-memory"/>
@@ -268,7 +178,7 @@
                     <driver name="h2" module="com.h2database.h2">
                         <xa-datasource-class>org.h2.jdbcx.JdbcDataSource</xa-datasource-class>
                     </driver>
-					  <driver name="postgres" module="org.postgresql">
+                    <driver name="postgres" module="org.postgresql">
                         <driver-class>org.postgresql.Driver</driver-class>
                     </driver>
                 </drivers>
@@ -292,9 +202,8 @@
             <local-routing/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:ee:6.0">
-		 <global-modules>
+            <global-modules>
                 <module name="org.postgresql" slot="main"/>
-                <module name="oracle.jdbc" slot="main"/>
             </global-modules>
             <spec-descriptor-property-replacement>false</spec-descriptor-property-replacement>
             <concurrent>

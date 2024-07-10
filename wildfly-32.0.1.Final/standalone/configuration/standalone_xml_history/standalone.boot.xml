@@ -39,9 +39,6 @@
         <extension module="org.wildfly.extension.security.manager"/>
         <extension module="org.wildfly.extension.undertow"/>
     </extensions>
-    <system-properties>
-   
-    </system-properties>
     <management>
         <audit-log>
             <formatters>
@@ -567,12 +564,4 @@
             <remote-destination host="${jboss.mail.server.host:localhost}" port="${jboss.mail.server.port:25}"/>
         </outbound-socket-binding>
     </socket-binding-group>
-    <deployments>
-        <deployment name="administrative-service.war" runtime-name="administrative-service.war">
-            <content sha1="f2416e4bc6c31da5561cd00d7b7246716710898e"/>
-        </deployment>
-        <deployment name="grant-service.war" runtime-name="grant-service.war">
-            <content sha1="9f15f9e217a416e99d5b6a6fa192551c9b96ca2a"/>
-        </deployment>
-    </deployments>
 </server>
